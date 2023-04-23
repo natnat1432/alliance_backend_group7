@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <body>
+   
+        <div style="font-family: Helvetica,Arial,sans-serif;min-width:1000px;overflow:auto;line-height:2">
+           
+            <div style="margin:50px auto;width:70%;padding:20px 0; color:#425974;">
+                <div style="border-bottom:1px solid #eee;">
+            		<div style="width:100%; display:flex; justify-content:center; align-items:center;">
+                    <img src="alliance.svg" alt="" style="width:17%; margin: auto;">
+                    </div>
+                 
+                </div>
+                    <p style="font-size:1.1em">Hi, <span th:text="${name}"></span></p>
+                    <p style="font-size:1.1em">We are pleased to inform you that your account has been successfully created. Your <b>Alliance Service Charge</b> login credentials are as follows:</p>
+              <br><br>
+              <div style="width:100%; display:flex; align-items:center;">
+                <label style="font-size:21px; margin-left:36px;"><b>Email: </b></label>
+     <div readonly style="padding:20px; width:400px;  font-size:21px; margin-left:36px; background-color:#ffeded; border:none; outline:none; border-radius:10px; border:3px solid #ed3b3b; color:#425974;">
+      <span th:text="${email_credential}"></span>
+     </div>
+                </div>
+             <br>
+                  <div style="width:100%; display:flex;align-items:center;">
+                    <label style=" font-size:21px;"><b>Password:</b> </label>
+              <div style="padding:20px; width:400px;  font-size:21px; margin-left:36px; background-color:#ffeded; border:none; outline:none; border-radius:10px; border:3px solid #ed3b3b; color:#425974;">
+              <span th:text="${password_credential}"></span>
+              </div>
+              </div>
+              <br><br>
+              <p style="font-size:1.1em" >If you have any questions or concerns regarding your account, please do not hesitate to contact us.</p>
+              <p style="font-size:1.1em">Regards,</p>
+              <p style="font-size:1.1em"><b><span th:text="${signature}"></span></b></p>
+                    <hr style="border:none;border-top:1px solid #eee" />
+                <div style="float:right;padding:8px 0;color:#aaa;font-size:0.8em;line-height:1;font-weight:300">
+                    <p>  14th Floor, Buildcomm Center,</p>
+                    <p>Sumilon Road, Cebu Business Park</p>
+                    <p>Cebu City, Cebu</p>
+                    <p>Philippines 6000</p>
+
+                </div>
+            </div>
+        </div>
+        </body>
+    </html>

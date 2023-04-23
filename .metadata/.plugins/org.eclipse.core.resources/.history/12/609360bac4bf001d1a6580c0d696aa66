@@ -1,0 +1,102 @@
+package ph.com.alliance.jpa.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "ticket")
+public class Ticket {
+	
+	@Id
+	Integer ticket_id;
+	
+	@Column(name = "employee_id")
+	String employee_id;
+	
+	@Column(name = "hr_id")
+	String hr_id;	
+	
+	public String getAttach_file() {
+		return attach_file;
+	}
+
+	public void setAttach_file(String attach_file) {
+		this.attach_file = attach_file;
+	}
+
+	@Column(name = "category")
+	String category;
+	
+	@Column(name = "description")
+	String description;
+	
+	@Column(name = "atttach_file")
+	String  attach_file;
+	
+	@Column(name = "date_request")
+	String date_request;
+	
+	@Column(name = "status")
+	String status;
+	
+	public String getEmployee_id() {
+		return employee_id;
+	}
+
+	public void setEmployee_id(String employee_id) {
+		this.employee_id = employee_id;
+	}
+
+	public String getHr_id() {
+		return hr_id;
+	}
+
+	public void setHr_id(String hr_id) {
+		this.hr_id = hr_id;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	public String getDate_request() {
+		return date_request;
+	}
+
+	public void setDate_request(String date_request) {
+		this.date_request = date_request;
+	}
+
+
+	public Integer getTicket_id() {
+		return ticket_id;
+	}
+
+	public void setTicket_id(Integer ticket_id) {
+		this.ticket_id = ticket_id;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
+	
+}

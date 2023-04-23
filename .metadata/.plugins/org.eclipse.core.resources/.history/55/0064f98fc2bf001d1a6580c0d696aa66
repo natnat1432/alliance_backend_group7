@@ -1,0 +1,5 @@
+package ph.com.alliance.jpa.functions.Ticket.service;
+
+public interface TicketService {
+	Object getAllTicket();
+}

@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+Z:\NN104\jumpstartuc2023\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3021590794.index
+215451642.index
+3712509819.index
+2656645882.index
+706835079.index
+1085638135.index

@@ -1,0 +1,24 @@
+package ph.com.alliance.jpa.functions.Ticket.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import ph.com.alliance.jpa.entity.Ticket;
+import ph.com.alliance.jpa.functions.Ticket.service.dao.TicketDao;
+
+@Service
+public class TicketServiceImpl implements TicketService {
+
+	@Autowired
+	TicketDao ticketDao;
+	
+	@Override
+	public java.util.List<Ticket> getAllTicket() {
+		// TODO Auto-generated method stub
+		java.util.List<Ticket> tickets = ticketDao.findAll();
+		
+		return tickets;
+		
+	}
+	
+}
